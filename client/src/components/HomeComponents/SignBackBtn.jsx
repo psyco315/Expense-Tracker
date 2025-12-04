@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaArrowLeft } from "react-icons/fa";
-import useSign from '../../context/Sign'
+import useSign from '../../context/sign'
 
 function SignBackBtn() {
     const { currentComp, switchCurrentComp } = useSign()
