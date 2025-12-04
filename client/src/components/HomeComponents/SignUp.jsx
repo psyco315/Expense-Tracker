@@ -6,7 +6,7 @@ function SignUp() {
 
     const handleSubmit = (e)=>{
         e.preventDefault()
-        window.location.href = 'http://localhost:5173/expenses';
+        window.location.href = 'https://expense-tracker-client-blush.vercel.app/expenses';
     }
 
     return (
