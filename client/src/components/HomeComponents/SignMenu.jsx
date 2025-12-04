@@ -1,5 +1,5 @@
 import React from 'react'
-import useSign from '../../context/Sign'
+import useSign from '../../context/sign'
 
 function SignMenu() {
     const { currentComp, switchCurrentComp } = useSign()
