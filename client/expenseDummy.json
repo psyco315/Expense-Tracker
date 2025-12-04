@@ -1,0 +1,174 @@
+[
+    {
+        "id": 156151,
+        "name": "Night Out",
+        "type": "groupExpense",
+        "createDate": "9/11/24",
+        "createBy": 120,
+        "members": [120, 121, 123, 122],
+        "expenses": [
+            {
+                "expID": 484,
+                "expName": "Pizza",
+                "date": "10/11/24",
+                "paidBy": 120,
+                "amountPaid": 500,
+                "userShare": 200
+            },
+            {
+                "expID": 454,
+                "expName": "Waffles",
+                "date": "11/11/24",
+                "paidBy": 123,
+                "amountPaid": 800,
+                "userShare": 300
+            },
+            {
+                "expID": 487,
+                "expName": "Burger",
+                "date": "12/11/24",
+                "paidBy": 122,
+                "amountPaid": 800,
+                "userShare": 200
+            }
+        ]
+    },
+    {
+        "id": 156152,
+        "name": "Trip to Goa",
+        "type": "groupExpense",
+        "createDate": "15/11/24",
+        "createBy": 121,
+        "members": [120, 121, 123, 122],
+        "expenses": [
+            {
+                "expID": 501,
+                "expName": "Hotel Stay",
+                "date": "16/11/24",
+                "paidBy": 121,
+                "amountPaid": 2000,
+                "userShare": 500
+            },
+            {
+                "expID": 502,
+                "expName": "Scooter Rental",
+                "date": "17/11/24",
+                "paidBy": 123,
+                "amountPaid": 1200,
+                "userShare": 300
+            }
+        ]
+    },
+    {
+        "id": 156153,
+        "name": "Movie Night",
+        "type": "groupExpense",
+        "createDate": "18/11/24",
+        "createBy": 123,
+        "members": [120, 121, 123],
+        "expenses": [
+            {
+                "expID": 601,
+                "expName": "Movie Tickets",
+                "date": "19/11/24",
+                "paidBy": 123,
+                "amountPaid": 900,
+                "userShare": 300
+            },
+            {
+                "expID": 602,
+                "expName": "Popcorn",
+                "date": "19/11/24",
+                "paidBy": 120,
+                "amountPaid": 300,
+                "userShare": 100
+            },
+            {
+                "expID": 603,
+                "expName": "Drinks",
+                "date": "19/11/24",
+                "paidBy": 121,
+                "amountPaid": 450,
+                "userShare": 150
+            }
+        ]
+    },
+    {
+        "id": 156154,
+        "name": "Birthday Bash",
+        "type": "groupExpense",
+        "createDate": "20/11/24",
+        "createBy": 122,
+        "members": [120, 121, 122],
+        "expenses": [
+            {
+                "expID": 701,
+                "expName": "Cake",
+                "date": "21/11/24",
+                "paidBy": 122,
+                "amountPaid": 600,
+                "userShare": 200
+            }
+        ]
+    },
+    {
+        "id": 156155,
+        "name": "Office Party",
+        "type": "groupExpense",
+        "createDate": "22/11/24",
+        "createBy": 120,
+        "members": [120, 121, 123, 122],
+        "expenses": [
+            {
+                "expID": 801,
+                "expName": "Dinner",
+                "date": "23/11/24",
+                "paidBy": 120,
+                "amountPaid": 1500,
+                "userShare": 375
+            },
+            {
+                "expID": 802,
+                "expName": "Drinks",
+                "date": "23/11/24",
+                "paidBy": 121,
+                "amountPaid": 800,
+                "userShare": 200
+            }
+        ]
+    },
+    {
+        "id": 156156,
+        "name": "Road Trip",
+        "type": "groupExpense",
+        "createDate": "24/11/24",
+        "createBy": 121,
+        "members": [120, 121, 123, 122, 124],
+        "expenses": [
+            {
+                "expID": 901,
+                "expName": "Fuel",
+                "date": "25/11/24",
+                "paidBy": 120,
+                "amountPaid": 2500,
+                "userShare": 500
+            },
+            {
+                "expID": 902,
+                "expName": "Snacks",
+                "date": "25/11/24",
+                "paidBy": 121,
+                "amountPaid": 300,
+                "userShare": 60
+            },
+            {
+                "expID": 903,
+                "expName": "Toll Charges",
+                "date": "25/11/24",
+                "paidBy": 123,
+                "amountPaid": 400,
+                "userShare": 80
+            }
+        ]
+    }
+]

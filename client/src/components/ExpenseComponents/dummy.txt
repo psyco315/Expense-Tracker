@@ -1,0 +1,449 @@
+
+
+Q.36
+A fair six-sided die (with faces numbered 1, 2, 3, 4, 5, 6) is repeatedly thrown
+independently.
+What is the expected number of times the die is thrown until two consecutive throws
+of even numbers are seen?
+(A) 2
+(B) 4
+(C) 6
+(D) 8
+Data Science and Artificial Intelligence (DA)
+Page 22 of 41
+Organizing Institute: IISc Bengaluru
+Q.37 Let 𝑓:ℝ → ℝ be a function. Note: ℝ denotes the set of real numbers.
+𝑓(𝑥) = {
+−𝑥, if 𝑥 < −2
+𝑎𝑥
+2 + 𝑏𝑥 + 𝑐, if 𝑥 ∈ [−2,2]
+𝑥, if 𝑥 > 2
+Which ONE of the following choices gives the values of 𝑎, 𝑏, 𝑐 that make the
+function 𝑓 continuous and differentiable?
+(A)
+𝑎 =
+1
+4
+, 𝑏 = 0, 𝑐 = 1
+(B)
+𝑎 =
+1
+2
+, 𝑏 = 0, 𝑐 = 0
+(C) 𝑎 = 0, 𝑏 = 0, 𝑐 = 0
+(D) 𝑎 = 1, 𝑏 = 1, 𝑐 = −4
+Data Science and Artificial Intelligence (DA)
+Page 23 of 41
+Organizing Institute: IISc Bengaluru
+Q.38 Consider the following Python code:
+def count(child_dict, i):
+ if i not in child_dict.keys():
+ return 1
+ ans = 1
+ for j in child_dict[i]:
+ ans += count(child_dict, j)
+ return ans
+child_dict = dict()
+child_dict[0] = [1,2]
+child_dict[1] = [3,4,5]
+child_dict[2] = [6,7,8]
+print(count(child_dict,0))
+Which ONE of the following is the output of this code?
+(A) 6
+(B) 1
+(C) 8
+(D) 9
+Data Science and Artificial Intelligence (DA)
+Page 24 of 41
+Organizing Institute: IISc Bengaluru
+Q.39 Consider the function computeS(X) whose pseudocode is given below:
+Which ONE of the following values is returned by the function computeS(X)
+for X = [6, 3, 5, 4, 10]?
+(A) [1, 1, 2, 3, 4]
+(B) [1, 1, 2, 3, 3]
+(C) [1, 1, 2, 1, 2]
+(D) [1, 1, 2, 1, 5]
+computeS(X)
+𝑆[1] ← 1
+for 𝑖 ←2 to 𝑙𝑒𝑛𝑔𝑡ℎ(𝑋)
+ 𝑆[𝑖] ← 1
+ if 𝑋[𝑖 − 1] ≤ 𝑋[𝑖]
+ 𝑆[𝑖] ← 𝑆[𝑖] + 𝑆[𝑖 − 1]
+ end if
+end for
+return S
+Data Science and Artificial Intelligence (DA)
+Page 25 of 41
+Organizing Institute: IISc Bengaluru
+Q.40 Let 𝐹(𝑛) denote the maximum number of comparisons made while searching for
+an entry in a sorted array of size 𝑛 using binary search.
+Which ONE of the following options is TRUE?
+(A) 𝐹(𝑛) = 𝐹(⌊𝑛/2⌋) + 1
+(B) 𝐹(𝑛) = 𝐹(⌊𝑛/2⌋) + 𝐹(⌈𝑛/2⌉)
+(C) 𝐹(𝑛) = 𝐹(⌊𝑛/2⌋)
+(D) 𝐹(𝑛) = 𝐹(𝑛 − 1) + 1
+Q.41 Consider the following Python function:
+def fun(D, s1, s2):
+ if s1 < s2:
+ D[s1], D[s2] = D[s2], D[s1]
+ fun(D, s1+1, s2-1)
+What does this Python function fun() do? Select the ONE appropriate option
+below.
+(A) It finds the smallest element in D from index s1 to s2, both inclusive.
+(B) It performs a merge sort in-place on this list D between indices s1 and s2, both
+inclusive.
+(C) It reverses the list D between indices s1 and s2, both inclusive.
+(D) It swaps the elements in D at indices s1 and s2, and leaves the remaining elements
+unchanged.
+Data Science and Artificial Intelligence (DA)
+Page 26 of 41
+Organizing Institute: IISc Bengaluru
+Q.42 Consider the table below, where the (𝑖,𝑗)
+𝑡ℎ
+element of the table is the distance
+between points 𝑥𝑖
+and 𝑥𝑗
+. Single linkage clustering is performed on data points,
+𝑥1
+,𝑥2
+, 𝑥3
+,𝑥4
+, 𝑥5
+.
+Which ONE of the following is the correct representation of the clusters produced?
+𝑥1 𝑥2 𝑥3 𝑥4 𝑥5
+𝑥1 0 1 4 3 6
+𝑥2 1 0 3 5 3
+𝑥3 4 3 0 2 5
+𝑥4 3 5 2 0 1
+𝑥5 6 3 5 1 0
+(A)
+(B)
+(C)
+(D)
+Data Science and Artificial Intelligence (DA)
+Page 27 of 41
+Organizing Institute: IISc Bengaluru
+Q.43 Consider the two neural networks (NNs) shown in Figures 1 and 2, with 𝑅𝑒𝐿𝑈
+activation (𝑅𝑒𝐿𝑈(𝑧) = max{0, 𝑧}, ∀𝑧 ∈ ℝ). ℝ denotes the set of real numbers. The
+connections and their corresponding weights are shown in the Figures. The biases
+at every neuron are set to 0. For what values of 𝑝, 𝑞, 𝑟 in Figure 2 are the two NNs
+equivalent, when 𝑥1
+,𝑥2
+, 𝑥3
+are positive?
+Figure 1
+Figure 2
+(A) 𝑝 = 36, 𝑞 = 24,𝑟 = 24
+(B) 𝑝 = 24, 𝑞 = 24,𝑟 = 36
+(C) 𝑝 = 18, 𝑞 = 36,𝑟 = 24
+(D) 𝑝 = 36, 𝑞 = 36,𝑟 = 36
+Data Science and Artificial Intelligence (DA)
+Page 28 of 41
+Organizing Institute: IISc Bengaluru
+Q.44 Consider a state space where the start state is number 1. The successor function for
+the state numbered n returns two states numbered n+1 and n+2. Assume that the
+states in the unexpanded state list are expanded in the ascending order of numbers
+and the previously expanded states are not added to the unexpanded state list.
+Which ONE of the following statements about breadth-first search (BFS) and
+depth-first search (DFS) is true, when reaching the goal state number 6?
+(A) BFS expands more states than DFS.
+(B) DFS expands more states than BFS.
+(C) Both BFS and DFS expand equal number of states.
+(D) Both BFS and DFS do not reach the goal state number 6.
+Q.45 Consider the following sorting algorithms:
+(i) Bubble sort
+(ii) Insertion sort
+(iii) Selection sort
+Which ONE among the following choices of sorting algorithms sorts the numbers
+in the array [4, 3, 2, 1, 5] in increasing order after exactly two passes over the array?
+(A) (i) only
+(B) (iii) only
+(C) (i) and (iii) only
+(D) (ii) and (iii) only
+Data Science and Artificial Intelligence (DA)
+Page 29 of 41
+Organizing Institute: IISc Bengaluru
+Q.46 Given the relational schema 𝑅 = (𝑈,𝑉, 𝑊, 𝑋, 𝑌, 𝑍) and the set of functional
+dependencies:
+{𝑈 → 𝑉, 𝑈 → 𝑊, 𝑊𝑋 → 𝑌, 𝑊𝑋 → 𝑍, 𝑉 → 𝑋}
+Which of the following functional dependencies can be derived from the above
+set?
+(A) 𝑉𝑊 → 𝑌𝑍
+(B) 𝑊𝑋 → 𝑌𝑍
+(C) 𝑉𝑊 → 𝑈
+(D) 𝑉𝑊 → 𝑌
+Data Science and Artificial Intelligence (DA)
+Page 30 of 41
+Organizing Institute: IISc Bengaluru
+Q.47 Select all choices that are subspaces of ℝ
+3
+.
+Note: ℝ denotes the set of real numbers.
+(A) {𝐱 = [
+𝑥1
+𝑥2
+𝑥3
+] ∈ ℝ
+3
+: 𝐱 = 𝛼 [
+1
+1
+0
+] + 𝛽 [
+1
+0
+0
+],𝛼, 𝛽 ∈ ℝ}
+(B) {𝐱 = [
+𝑥1
+𝑥2
+𝑥3
+] ∈ ℝ
+3
+: 𝐱 = 𝛼
+2
+[
+1
+2
+0
+] + 𝛽
+2
+[
+1
+0
+1
+], 𝛼, 𝛽 ∈ ℝ}
+(C) {𝐱 = [
+𝑥1
+𝑥2
+𝑥3
+] ∈ ℝ
+3
+: 5𝑥1 + 2𝑥3 = 0, 4𝑥1 − 2𝑥2 + 3𝑥3 = 0}
+(D) {𝐱 = [
+𝑥1
+𝑥2
+𝑥3
+] ∈ ℝ
+3
+: 5𝑥1 + 2𝑥3 + 4 = 0}
+Data Science and Artificial Intelligence (DA)
+Page 31 of 41
+Organizing Institute: IISc Bengaluru
+Q.48 Which of the following statements is/are TRUE?
+Note: ℝ denotes the set of real numbers.
+(A) There exist 𝑴 ∈ ℝ
+3×3
+, 𝒑 ∈ ℝ
+3
+, and 𝒒 ∈ ℝ
+3
+such that 𝑴𝐱 = 𝒑 has a unique
+solution and M𝐱 = 𝒒 has infinite solutions.
+(B) There exist 𝑴 ∈ ℝ
+3×3
+, 𝒑 ∈ ℝ
+3
+, and 𝒒 ∈ ℝ
+3
+such that 𝑴𝐱 = 𝒑 has no solutions
+and M𝐱 = 𝒒 has infinite solutions.
+(C) There exist 𝑴 ∈ ℝ
+2×3
+, 𝒑 ∈ ℝ
+2
+, and 𝒒 ∈ ℝ
+2
+such that 𝑴𝐱 = 𝒑 has a unique
+solution and M𝐱 = 𝒒 has infinite solutions.
+(D) There exist 𝑴 ∈ ℝ
+3×2
+, 𝒑 ∈ ℝ
+3
+, and 𝒒 ∈ ℝ
+3
+such that 𝑴𝐱 = 𝒑 has a unique
+solution and M𝐱 = 𝒒 has no solutions.
+Data Science and Artificial Intelligence (DA)
+Page 32 of 41
+Organizing Institute: IISc Bengaluru
+Q.49 Let ℝ be the set of real numbers, 𝑈 be a subspace of ℝ
+3
+ and 𝑴 ∈ ℝ
+3×3 be the
+matrix corresponding to the projection on to the subspace 𝑈.
+Which of the following statements is/are TRUE?
+(A)
+If 𝑈 is a 1-dimensional subspace of ℝ
+3
+, then the null space of 𝑴 is a
+1-dimensional subspace.
+(B) If 𝑈 is a 2-dimensional subspace of ℝ
+3
+, then the null space of 𝑴 is a
+1-dimensional subspace.
+(C) 𝑴2 = 𝑴
+(D) 𝑴3 = 𝑴
+Q.50 Consider the function 𝑓: ℝ → ℝ where ℝ is the set of all real numbers.
+𝑓(𝑥) =
+𝑥
+4
+4
+−
+2𝑥
+3
+3
+−
+3𝑥
+2
+2
++ 1
+Which of the following statements is/are TRUE?
+(A) 𝑥 = 0 is a local maximum of f
+(B) 𝑥 = 3 is a local minimum of f
+(C) 𝑥 = −1 is a local maximum of f
+(D) 𝑥 = 0 is a local minimum of f
+Data Science and Artificial Intelligence (DA)
+Page 33 of 41
+Organizing Institute: IISc Bengaluru
+Q.51 Consider the directed acyclic graph (DAG) below:
+Which of the following is/are valid vertex orderings that can be obtained from a
+topological sort of the DAG?
+(A) P Q R S T U V
+(B) P R Q V S U T
+(C) P Q R S V U T
+(D) P R Q S V T U
+Data Science and Artificial Intelligence (DA)
+Page 34 of 41
+Organizing Institute: IISc Bengaluru
+Q.52 Let H,𝐼, 𝐿, and 𝑁 represent height, number of internal nodes, number of leaf nodes,
+and the total number of nodes respectively in a rooted binary tree.
+Which of the following statements is/are always TRUE?
+(A) 𝐿 ≤ 𝐼 + 1
+(B) 𝐻 + 1 ≤ 𝑁 ≤ 2
+𝐻+1 − 1
+(C) 𝐻 ≤ 𝐼 ≤ 2
+𝐻 − 1
+(D) 𝐻 ≤ 𝐿 ≤ 2
+𝐻−1
+Data Science and Artificial Intelligence (DA)
+Page 35 of 41
+Organizing Institute: IISc Bengaluru
+Q.53 Consider the following figures representing datasets consisting of
+two-dimensional features with two classes denoted by circles and squares.
+(i) (ii)
+(iii) (iv)
+Which of the following is/are TRUE?
+(A) (i) is linearly separable.
+(B) (ii) is linearly separable.
+(C) (iii) is linearly separable.
+(D) (iv) is linearly separable.
+Data Science and Artificial Intelligence (DA)
+Page 36 of 41
+Organizing Institute: IISc Bengaluru
+Q.54 Let game(ball, rugby) be true if the ball is used in rugby and false otherwise.
+Let shape(ball, round) be true if the ball is round and false otherwise.
+Consider the following logical sentences:
+s1: ∀ball ¬ game(ball, rugby) ⟹shape(ball, round)
+s2: ∀ball ¬ shape(ball, round) ⟹game(ball, rugby)
+s3: ∀ball game(ball, rugby) ⟹ ¬ shape(ball, round)
+s4: ∀ball shape(ball, round) ⟹ ¬ game(ball, rugby)
+Which of the following choices is/are logical representations of the assertion,
+ “All balls are round except balls used in rugby”?
+
+Q.55 An OTT company is maintaining a large disk-based relational database of different
+movies with the following schema:
+Movie(ID, CustomerRating)
+Genre(ID, Name)
+Movie_Genre(MovieID, GenreID)
+Consider the following SQL query on the relation database above:
+SELECT *
+FROM Movie, Genre, Movie_Genre
+WHERE
+Movie.CustomerRating > 3.4 AND
+Genre.Name = “Comedy” AND
+Movie_Genre.MovieID = Movie.ID AND
+Movie_Genre.GenreID = Genre.ID;
+This SQL query can be sped up using which of the following indexing options?
+
+Q.56 Let 𝑋 be a random variable uniformly distributed in the interval [1, 3] and 𝑌 be a
+random variable uniformly distributed in the interval [2, 4]. If X and Y are
+independent of each other, the probability P(𝑋 ≥ 𝑌) is ______ (rounded off to
+three decimal places).
+
+Q.57 Let 𝑋 be a random variable exponentially distributed with parameter 𝜆 > 0. The
+probability density function of X is given by: 𝑓𝑋 (𝑥) = { 𝜆 𝑒 −𝜆𝑥 , 𝑥 ≥ 0 0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 If 5𝐸(𝑋) = 𝑉𝑎𝑟(𝑋), where 𝐸(𝑋) and 𝑉𝑎𝑟(𝑋) indicate the expectation and variance
+of 𝑋, respectively, the value of 𝜆 is ______ (rounded off to one decimal place).
+
+Q.58 Consider two events T and S. Let 𝑇̅denote the complement of the event T. The
+probability associated with different events are given as follows:
+𝑃(𝑇̅) = 0.6, 𝑃(𝑆|𝑇) = 0.3, 𝑃(𝑆|𝑇̅) = 0.6
+Then, 𝑃(𝑇|𝑆) is ______ (rounded off to two decimal places).
+
+Q.59 Consider a joint probability density function of two random variables X and Y
+𝑓𝑋,𝑌 (𝑥, 𝑦) = { 2𝑥𝑦, 0 < 𝑥 < 2, 0 < 𝑦 < 𝑥 0, otherwise Then, 𝐸[𝑌|𝑋 = 1.5] is ______.
+
+Q.60 Evaluate the following limit:
+lim 𝑥→0 ln((𝑥 2+1) cos 𝑥) 𝑥 2 = ______.
+
+Q.61
+Let 𝒖 = [ 1 2 3 4 5 ] ,  and let 𝜎1 , 𝜎2 ,𝜎3 , 𝜎4 , 𝜎5 be the singular values of the matrix 𝑴= 𝒖𝒖 𝑻 (where 𝒖 𝑻 is the transpose of 𝒖). The value of ∑ 𝜎𝑖 5 𝑖=1 is ______.
+
+Q.62 Details of ten international cricket games between two teams “Green” and “Blue”
+are given in Table C. This table consists of matches played on different pitches,
+across formats along with their winners. The attribute Pitch can take one of two
+values: spin-friendly (represented as 𝑆) or pace-friendly (represented as 𝐹). The
+attribute Format can take one of two values: one-day match (represented as 𝑂) or
+test match (represented as 𝑇).
+A cricket organization would like to use the information given in Table C to develop
+a decision-tree model to predict outcomes of future games between these two teams.
+To develop such a model, the computed InformationGain(C, Pitch) with respect to
+the Target is ______ (rounded off to two decimal places).
+Table C
+Match
+Number
+Pitch Format Winner (Target)
+1 𝑆 𝑇 Green
+2 𝑆 𝑇 Blue
+3 𝐹 𝑂 Blue
+4 𝑆 𝑂 Blue
+5 𝐹 𝑇 Green
+6 𝐹 𝑂 Blue
+7 𝑆 𝑂 Green
+8 𝐹 𝑇 Blue
+9 𝐹 𝑂 Blue
+10 𝑆 𝑂 Green
+
+Q.63 Given the two-dimensional dataset consisting of 5 data points from two classes
+(circles and squares) and assume that the Euclidean distance is used to measure the
+distance between two points. The minimum odd value of 𝑘 in 𝑘-nearest neighbor
+algorithm for which the diamond (⋄) shaped data point is assigned the label square
+is ______.
+
+Q.64 Given the following Bayesian Network consisting of four Bernoulli random
+variables and the associated conditional probability tables:
+𝑃(𝑊 = 0| ⋅) 𝑃(𝑊 = 1| ⋅)
+𝑈 = 0 1 0
+𝑈 = 1 0 1
+𝑃(𝑍 = 0| ⋅) 𝑃(𝑍 = 1| ⋅)
+𝑉 = 0 𝑊 = 0 0.5 0.5
+𝑉 = 0 𝑊 = 1 1 0
+𝑉 = 1 𝑊 = 0 1 0
+𝑉 = 1 𝑊 = 1 0.5 0.5
+The value of 𝑃(𝑈 = 1, 𝑉 = 1, 𝑊 = 1,𝑍 = 1) = ______ (rounded off to three
+decimal places).
+𝑃(⋅)
+𝑈 = 0 0.5
+𝑈 = 1 0.5
+𝑃(𝑉 = 0| ⋅) 𝑃(𝑉 = 1| ⋅)
+𝑈 = 0 0.5 0.5
+𝑈 = 1 0.5 0.5
+
+Q.65 Two fair coins are tossed independently. X is a random variable that takes a value
+of 1 if both tosses are heads and 0 otherwise. Y is a random variable that takes a
+value of 1 if at least one of the tosses is heads and 0 otherwise.
+The value of the covariance of X and Y is ______ (rounded off to three decimal
+places).
+
+Out of these questions, list the one that are from stats, probability, linear algebra and calculus
