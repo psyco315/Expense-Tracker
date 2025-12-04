@@ -48,7 +48,7 @@ function DisclosureSelf() {
     const submitToDB = async (currUser, newGroupName) => {
         const createDate = getFormattedDate()
         try {
-            const response = await axios.post('/api/expense/groupData/postGroup', {
+            const response = await axios.post('https://expense-tracker-server-three-phi.vercel.app/api/expense/groupData/postGroup', {
                 currUser,
                 newGroupName,
                 createDate

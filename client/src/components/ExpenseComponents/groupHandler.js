@@ -3,7 +3,7 @@ import { rerender } from './postExpense';
 
 const updateExpense = async (groupID, userID, setData, currExp, setCurrentExp) => {
     try {
-        const response = await axios.put("http://localhost:3000/api/expense/groupData/leaveExpense", {
+        const response = await axios.put("https://expense-tracker-server-three-phi.vercel.app/api/expense/groupData/leaveExpense", {
             groupID,
             userID
         });

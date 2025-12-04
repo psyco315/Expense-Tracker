@@ -3,7 +3,7 @@ import axios from 'axios'
 const getFullData = async (setData, userID) => {
     try {
         // console.log("Fetching full data")
-        const response = await axios.get('/api/expense/groupData');
+        const response = await axios.get('https://expense-tracker-server-three-phi.vercel.app/api/expense/groupData');
         let result = response.data.result || []; // Handle missing data gracefully
         // console.log("Full data:", result)
         
@@ -18,7 +18,7 @@ const getFullData = async (setData, userID) => {
 };
 
 const getAccounts = (setAccount) => {
-    axios.get('/api/account')
+    axios.get('https://expense-tracker-server-three-phi.vercel.app/api/account')
         .then(response => {
             setAccount(response.data.result)
         })

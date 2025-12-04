@@ -34,7 +34,7 @@ const postSingleExpense = async (
 
     try {
         const response = await axios.put(
-            `http://localhost:3000/api/expense/groupData/editExpense/${currentExp.id}`,
+            `https://expense-tracker-server-three-phi.vercel.app/api/expense/groupData/editExpense/${currentExp.id}`,
             postObj
         );
 
@@ -78,7 +78,7 @@ const rerender = async (setData, currExp, setCurrentExp, currUser) => {
 
 const postTransaction = async (transactionObj) => {
     try {
-        const response = await axios.post('/api/transaction', transactionObj, {
+        const response = await axios.post('https://expense-tracker-server-three-phi.vercel.app/api/transaction', transactionObj, {
             headers: {
                 'Content-Type': 'application/json', // Specify the content type
             },

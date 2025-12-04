@@ -6,7 +6,7 @@ let ids = []
 let endResult = {}
 
 const getTransactions = async (targetId) => {
-    return axios.get('/api/transaction')
+    return axios.get('https://expense-tracker-server-three-phi.vercel.app/api/transaction')
         .then(response => {
             transactionList = response.data.result.filter(transaction => transaction.groupID == targetId);
         })
