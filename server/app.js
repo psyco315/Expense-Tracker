@@ -2,9 +2,9 @@ import connectDB from './db/connect.js'
 import expenseRouter from './routes/expense.js'
 import transactionRouter from './routes/transaction.js'
 import accountRouter from './routes/account.js'
-import dotenv from 'dotenv'
+// import dotenv from 'dotenv'
 import 'express-async-errors'
-dotenv.config()
+// dotenv.config()
 
 import errorMiddleware from './middleware/error-handler.js'
 import notFoundMiddleware from './middleware/not-found.js'
