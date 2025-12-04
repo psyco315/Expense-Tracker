@@ -16,19 +16,21 @@ const app = express()
 const port = process.env.PORT || 3000
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:5173', 'https://booklog-client.vercel.app'],
+    credentials: true
+}));
 app.use(express.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 app.use(express.json())
 
-app.put('/api/test', (req, res) => {
-    // Log the body of the request
-    console.log("test working")
-    console.log(req.body)
+app.get('/', (req, res) => {
+  res.json({ message: 'Hello World' });
+});
 
+app.get('/api/test', (req, res) => {
     res.status(200).json({
-        message: 'Data received and updated',
-        receivedData: req.body
+        message: 'Test fine'
     });
 })
 
