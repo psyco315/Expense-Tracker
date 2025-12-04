@@ -16,10 +16,11 @@ const app = express()
 const port = process.env.PORT || 3000
 
 // Middlewares
-app.use(cors({
-    origin: ['http://localhost:5173', 'https://expense-tracker-client-blush.vercel.app'],
-    credentials: true
-}));
+app.use(cors());
+// {
+//     origin: ['http://localhost:5173', 'https://expense-tracker-client-blush.vercel.app'],
+//     credentials: true
+// }
 app.use(express.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 app.use(express.json())
