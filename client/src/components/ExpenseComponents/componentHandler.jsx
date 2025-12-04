@@ -4,7 +4,7 @@ import ExpenseCard from "./ExpenseCard";
 import ExpenseDashboard from "./ExpenseDashboard";
 import ExpenseList from "./ExpenseList";
 import Settle from "./Settle";
-import UserIcon from "./userIcon";
+import UserIcon from "./UserIcon";
 import AddExpPopup from "./addExpPopup";
 import LeaveGroup from "./LeaveGroup";
 import SettleGroup from "./SettleGroup";
