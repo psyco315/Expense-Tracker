@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SignProvider } from '../../context/sign'
+import { SignProvider } from '../../context/sign.jsx'
 import SignMenu from './SignMenu'
 import SignUp from './SignUp'
 import SignIn from './SignIn'
